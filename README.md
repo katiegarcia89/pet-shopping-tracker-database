@@ -1,52 +1,53 @@
-# Shopping Tracker Database
+# Pet Shopping Tracker Database
 
-## Overview
-
-The Shopping Tracker Database is a SQL portfolio project designed to compare pet product prices across multiple retailers. The database was inspired by my own shopping habits and allows me to compare prices, delivery times, and product availability while also demonstrating my SQL and relational database skills.
-
-This project serves two purposes:
-
-- Help compare pet product prices to make more informed purchasing decisions.
-- Demonstrate practical SQL knowledge for employers through database design, data modeling, and query development.
+A relational MySQL database designed to compare pet product prices across multiple retailers. This project demonstrates database design, normalization, SQL querying, and data analysis using realistic shopping data.
 
 ---
 
-## Project Objectives
+## Overview
 
-- Design a normalized relational database
-- Create tables using primary and foreign keys
-- Populate the database with realistic sample data
-- Write SQL queries ranging from basic to advanced
-- Analyze pricing information across multiple retailers
+The Pet Shopping Tracker Database was inspired by my own shopping habits. It allows users to compare prices, delivery times, and product availability across multiple retailers while showcasing practical SQL and relational database skills.
+
+This project demonstrates:
+
+- Database design and normalization
+- Relational data modeling
+- SQL query development
+- Data analysis using realistic datasets
+
+---
+
+## EER Diagram
+
+![EER Diagram](docs/eer-diagram.png)
 
 ---
 
 ## Database Structure
 
-The project consists of the following tables:
+The database contains three related tables.
 
 | Table | Description |
 |--------|-------------|
-| Stores | Stores that sell pet products |
-| Products | Product information including category and food type |
-| StorePrices | Product prices, delivery estimates, and price history |
+| **Stores** | Stores that sell pet products |
+| **Products** | Product information including category and food type |
+| **StorePrices** | Product pricing, delivery estimates, and historical pricing information |
 
 ---
 
 ## Skills Demonstrated
 
-- Database Design
-- Data Modeling
+- Relational Database Design
+- Entity Relationship Modeling
 - Primary & Foreign Keys
 - SQL Queries
-- Filtering Data
-- Sorting Results
+- Filtering & Sorting
 - Aggregate Functions
 - GROUP BY
 - HAVING
 - INNER JOIN
-- Subqueries
 - CASE Statements
+- Subqueries
 - Window Functions
 - Common Table Expressions (CTEs)
 - Views
@@ -58,36 +59,37 @@ The project consists of the following tables:
 | File | Description |
 |------|-------------|
 | 01_Create_Database.sql | Creates the database |
-| 02_Create_Tables.sql | Creates all database tables |
+| 02_Create_Tables.sql | Creates all tables |
 | 03_Insert_Stores.sql | Inserts store data |
 | 04_Insert_Products.sql | Inserts product data |
-| 05_Insert_StorePrices.sql | Inserts pricing information |
-| Basic_Queries.sql | Demonstrates basic SQL queries |
-| Intermediate_Queries.sql | Demonstrates joins, grouping, and aggregate functions |
-| Advanced_Queries.sql | Demonstrates advanced SQL techniques |
+| 05_Insert_StorePrices.sql | Inserts pricing data |
+| Basic_Queries.sql | Basic SQL queries |
+| Intermediate_Queries.sql | Joins, grouping, and aggregate functions |
+| Advanced_Queries.sql | Window functions, CTEs, views, and advanced SQL techniques |
 
 ---
 
-## Sample Questions Answered
+## Example Business Questions
 
 This database can answer questions such as:
 
-- Which store has the lowest price for a product?
+- Which store has the lowest price for each product?
 - Which products are available for same-day pickup?
 - What is the average price of dog food?
 - Which stores offer the fastest delivery?
-- What is the cheapest retailer for each product?
+- Which retailer offers the cheapest overall prices?
 - Which products are priced above or below average?
 
 ---
 
-## Technologies Used
+## Technologies
 
 - MySQL
-- MySQL Workbench
+- DBeaver
+- SQL
 
 ---
 
 ## Author
 
-Katie Garcia
+**Katie Garcia**
