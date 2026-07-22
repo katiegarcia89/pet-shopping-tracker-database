@@ -19,7 +19,7 @@ This project demonstrates:
 
 ## EER Diagram
 
-![EER Diagram](EER Diagram.png)
+![EER Diagram](<EER Diagram.png>)
 
 ---
 
